@@ -1,4 +1,4 @@
-Rails.application.configure do
+SampleApp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's
@@ -36,4 +36,6 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  config.secret_key_base = '2f08074d0b16416203f20e961ad6eed47444919b817ab3a963f1264240a29449d914d104c126c5e16dc7c875ca8bd00d99439c5fcc11f6bcf77be01149bcfca7'
+
 end
