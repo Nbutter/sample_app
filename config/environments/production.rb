@@ -84,4 +84,7 @@ SampleApp::Application.configure do
   # secret key base set for production to read
   config.secret_key_base = '2f08074d0b16416203f20e961ad6eed47444919b817ab3a963f1264240a29449d914d104c126c5e16dc7c875ca8bd00d99439c5fcc11f6bcf77be01149bcfca7'
 
+  # Force all access to the app over SSL, use Strict-Transport-Security,
+  # and use secure cookies.
+  config.force_ssl = true
 end
