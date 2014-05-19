@@ -38,4 +38,7 @@ SampleApp::Application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.secret_key_base = '2f08074d0b16416203f20e961ad6eed47444919b817ab3a963f1264240a29449d914d104c126c5e16dc7c875ca8bd00d99439c5fcc11f6bcf77be01149bcfca7'
 
+# Speed up tests by lowering bcrypt's cost function.
+  ActiveModel::SecurePassword.min_cost = true
+
 end
